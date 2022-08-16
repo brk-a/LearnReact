@@ -2,15 +2,19 @@ import React, { useEffect } from 'react'
 import useWordle from '../hooks/useWordle'
 
 const Wordle = ({solution}) => {
-    const { currentGuess, handleKeyUp } = useWordle(solution);
+    const { currentGuess, handleKeyup } = useWordle(solution);
 
     useEffect(() => {
-        window.addEventListener('keyup', handleKeyUp);
-        return window.removeEventListener('keyup', handleKeyUp);
-    }, [handleKeyUp]);
+        window.addEventListener('keyup', handleKeyup);
+        return window.removeEventListener('keyup', handleKeyup);
+    }, [handleKeyup]);
 
   return (
-    <div>current guess: {currentGuess}</div>
+    <div>
+        <div>solution: {solution}</div>
+        <div>current guess: {currentGuess}</div>
+    </div>
+    
   );
 }
 
