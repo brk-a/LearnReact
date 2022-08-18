@@ -17,7 +17,7 @@ const useWordle = (solution) => {
 
         //find all letters that will be coloured green
         formattedGuess.forEach((letter, i) => {
-            if (solutionArray[i] === letter.key) {
+            if (solution[i] === letter.key) {
                 formattedGuess[i].colour = 'green';
                 solutionArray[i] = null;
             }
@@ -45,7 +45,7 @@ const useWordle = (solution) => {
 
         setGuesses((prevGuesses) => {
             let newGuesses = [...prevGuesses];
-            newGuesses[turn] = formatGuess;
+            newGuesses[turn] = formattedGuess;
             return newGuesses;
         });
 
