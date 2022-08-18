@@ -12,7 +12,7 @@ const Wordle = ({solution}) => {
 
     useEffect(() => {
       console.log(guesses, turn, isCorrect);
-    }, [handleKeyup]); 
+    }, [guesses, turn, isCorrect]); 
     
     return (
       <div>
