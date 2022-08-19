@@ -18,7 +18,7 @@ const Modal = ({isCorrect, turn, solution}) => {
             </div>
         )}
     </div>
-  )
+  );
 }
 
 export default Modal

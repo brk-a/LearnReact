@@ -57,27 +57,24 @@ const useWordle = (solution) => {
             return prevTurn + 1;
         });
 
-        setUsedkeys((prevUsedKeys) => {
-            let newKeys = {...prevUsedKeys};
-            
+        setUsedkeys(prevUsedKeys => {
             formattedGuess.forEach((letter) => {
-                const currentColour = newKeys[letter.key];
+                const currentColour = prevUsedKeys[letter.key];
 
                 if (letter.colour === 'green') {
-                    newKeys[letter.key] = 'green';
+                    prevUsedKeys[letter.key] = 'green';
                     return;
                 }
                 if (letter.colour === 'yellow' && currentColour !== 'green') {
-                    newKeys[letter.key] = 'yellow';
+                    prevUsedKeys[letter.key] = 'yellow';
                     return;
                 }
                 if (letter.colour === 'grey' && currentColour !== ('green' || 'yellow')) {
-                    newKeys[letter.key] = 'grey';
+                    prevUsedKeys[letter.key] = 'grey';
                     return;
                 }
-
-                return newKeys;
             });
+            return prevUsedKeys;
         });
 
         //re-set currentGuess after each turn (guess, if you like)
