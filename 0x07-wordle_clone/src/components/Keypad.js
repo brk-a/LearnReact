@@ -6,7 +6,7 @@ const Keypad = ({usedKeys}) => {
         fetch('http://localhost:3001/letters')
             .then(res => res.json())
             .then(json => {
-                setLetters(json)
+                setLetters(json);
             });
     }, [setLetters]);
     return (
