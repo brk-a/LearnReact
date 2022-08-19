@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Keypad = () => {
+const Keypad = ({usedKeys}) => {
     const [letters, setLetters] = useState(null);
     useEffect(() => {
         fetch('http://localhost:3001/letters')
@@ -12,8 +12,9 @@ const Keypad = () => {
     return (
         <div className='keypad'>
             {letters && letters.map((letter) => {
+                const colour = usedKeys[letter.key];
                 return(
-                    <div key={letter.key}>{letter.key}</div>
+                    <div key={letter.key} className={colour}>{letter.key}</div>
                 );
             })}
         </div>
