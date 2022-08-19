@@ -6,7 +6,7 @@ import Modal from './Modal'
 
 const Wordle = ({solution}) => {
     const { currentGuess, handleKeyup, guesses, isCorrect, turn, usedKeys } = useWordle(solution);
-    const {showModal, setShowModal} = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
       window.addEventListener('keyup', handleKeyup);
@@ -27,8 +27,8 @@ const Wordle = ({solution}) => {
     
     return (
       <div>
-          <div>solution: {solution}</div>
-          <div>current guess: {currentGuess}</div>
+          {/* <div>solution: {solution}</div>
+          <div>current guess: {currentGuess}</div> */}
           <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
           <Keypad usedKeys={usedKeys}/>
           {showModal && <Modal isCorrect={isCorrect} turn={turn} solution={solution}/>}
