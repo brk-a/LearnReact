@@ -7,7 +7,7 @@ function App() {
   const [solution, setSolution] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/solution')
+    fetch('http://localhost:3001/solutions')
       .then(res => res.json())
       .then(json => {
         //generate random int [0,14]
