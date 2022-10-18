@@ -25,7 +25,7 @@ export const features = [
     icon: star,
     title: "Rewards",
     content:
-      "The best credit cards offer some tantalising combinations of promotions and prizes",
+      "The best credit cards with tantalising combinations of promotions and prizes",
   },
   {
     id: "feature-2",
@@ -39,7 +39,7 @@ export const features = [
     icon: send,
     title: "Balance Transfer",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "A balance transfer credit card saves you a lot of money in interest charges.",
   },
 ];
 
@@ -48,24 +48,24 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+    name: "Goat Matata",
+    title: "Founder, The GOAT Podcast",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "Money makes your life easier. If you have it, you have it.",
+    name: "Dada Ng'ombe",
+    title: "CEO, Chizi About Cheese",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
       "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    name: "Paka the Cat",
+    title: "Founder, Catnip & Chill",
     img: people03,
   },
 ];
@@ -73,17 +73,17 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
+    title: "Active Users",
     value: "3800+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Companies trust us",
     value: "230+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
+    title: "Transactions",
     value: "$230M+",
   },
 ];
@@ -143,11 +143,11 @@ export const footerLinks = [
     title: "Partner",
     links: [
       {
-        name: "Our Partner",
+        name: "Our Partners",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Be a Partner",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
