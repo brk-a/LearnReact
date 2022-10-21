@@ -57,7 +57,7 @@ To set up a development environment, please follow these steps:
 2. Change directory to the project directory
 
     ```shell
-    cd project1_team4_repository
+    cd spotify_clone
     ```
 
 3. Install the dependencies
