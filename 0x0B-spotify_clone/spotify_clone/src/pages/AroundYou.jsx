@@ -16,11 +16,18 @@ const AroundYou = () => {
     const {data, isFetching, error} = useGetSongByCountryQuery(country)
 
     useEffect(() => {
+
+        const controller = new AbortController()
+        const signal = controller.signal
+
         axios
           .get('https://geo.ipify.org/api/v2/country?apiKey=at_YkGyAbTo59bUNo8iaIzScxNIicp1N')
           .then((res) => setCountry(res?.data?.location.country))
           .catch((err) => console.log(err))
           .finally(() => setLoading(false));
+
+        return () => (controller.abort())
+
       }, [country]);
     
     if (isFetching && loading) return <Loader title='Fetching songs around you...'/>
