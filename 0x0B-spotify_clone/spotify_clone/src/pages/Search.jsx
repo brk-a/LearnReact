@@ -2,7 +2,7 @@
 
 const Search = () => {
   return(
-    <div>Searh</div>
+    <div>Search</div>
   )
 }
 
