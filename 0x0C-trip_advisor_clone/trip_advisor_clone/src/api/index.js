@@ -34,7 +34,6 @@ export const getPlacesData = async (sw, ne) => {
                 tr_latitude: ne.lat,
                 bl_longitude: sw.lng,
                 tr_longitude: ne.lng,
-                limit: '',
                 currency: 'KES',
                 open_now: 'false',
                 lunit: 'km',
