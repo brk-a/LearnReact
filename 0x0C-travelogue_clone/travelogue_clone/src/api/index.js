@@ -34,10 +34,10 @@ export const getPlacesData = async (sw, ne) => {
                 tr_latitude: ne.lat,
                 bl_longitude: sw.lng,
                 tr_longitude: ne.lng,
-                currency: 'KES',
-                open_now: 'false',
-                lunit: 'km',
-                lang: 'en_GB'
+                // currency: 'KES',
+                // open_now: 'false',
+                // lunit: 'km',
+                // lang: 'en_GB'
               },
               headers: {
                 'X-RapidAPI-Key': 'b645d2d559mshfaba903111cc2c9p155c10jsn43dc6a6cfe2a',
