@@ -8,10 +8,8 @@ import useStyles from './MapStyles'
 
 const Map = ({setCoordinates, setBounds, coordinates, places, setChildClick}) => {
   const classes = useStyles()
-  const isDesktop = useMediaQuery('(min-width:600px')
-
-  // const [childClick, setChildClick] = useState(null)
-
+  const isDesktop = useMediaQuery('min-width:600px')
+  
   return (
     <div className={classes.mapContainer}>
       <GoogleMapReact
