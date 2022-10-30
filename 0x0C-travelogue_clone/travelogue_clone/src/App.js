@@ -4,20 +4,25 @@ import List from './components/List/List'
 import Map from './components/Map/Map'
 // import PlaceDetails from './components/PlaceDetails/PlaceDetails'
 
-import { getPlacesData } from "./api";
+import { getPlacesData, getWeatherData } from "./api";
 
 import { CssBaseline, Grid } from "@material-ui/core";
 
 const App = () => {
 
-  const [places, setPlaces] = useState([])
-  const [coordinates, setCoordinates] = useState({})
-  const [bounds, setBounds] = useState({})
-  const [childClick, setChildClick] = useState(null)
-  const [isLoading, setIsLoading] = useState(false)
   const [type, setType] = useState('restaurants')
   const [rating, setRating] = useState('')
+
+  const [coordinates, setCoordinates] = useState({})
+  const [bounds, setBounds] = useState({})
+
   const [filteredPlaces, setFilteredPlaces] = useState([])
+  const [places, setPlaces] = useState([])
+
+  const [childClick, setChildClick] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
+
+  const [weatherData, setWeatherData] = useState([])
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(({coords: {latitude, longitude}}) => {
@@ -26,7 +31,7 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    const filtered = places?.filter((place) => place.rating > rating)
+    const filtered = places?.filter((place) => Number(place.rating) > rating)
     setFilteredPlaces(filtered)
   }, [rating, places])
   
@@ -34,14 +39,18 @@ const App = () => {
     if (bounds.sw && bounds.ne) {
       setIsLoading(true)
 
+      getWeatherData(coordinates.lat, coordinates.lng)
+        .then((data) => setWeatherData(data))
+
       getPlacesData(type, bounds.sw, bounds.ne)
         .then((data) => {
           setPlaces(data?.filter((place) => (place.name && place.num_reviews > 0)))
           setFilteredPlaces([])
+          setRating('')
           setIsLoading(false)
         })
     }
-  }, [type, bounds])
+  }, [type, bounds, coordinates.lat, coordinates.lng])
 
   return(
     <>
@@ -56,7 +65,7 @@ const App = () => {
         </Grid>
         
         <Grid item xs={12} md={4}>
-          <Map setChildClick={setChildClick} setBounds={setBounds} setCoordinates={setCoordinates} coordinates={coordinates} places={filteredPlaces.length ? filteredPlaces : places}/>
+          <Map weatherData={weatherData} setChildClick={setChildClick} setBounds={setBounds} setCoordinates={setCoordinates} coordinates={coordinates} places={filteredPlaces.length ? filteredPlaces : places}/>
         </Grid>
         
       </Grid>

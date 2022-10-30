@@ -1,31 +1,7 @@
-import { type } from "@testing-library/user-event/dist/type";
+/* eslint-disable consistent-return */
 import axios from "axios";
 
-// const options = {
-//   params: {
-//     bl_latitude: '11.847676',
-//     tr_latitude: '12.838442',
-//     bl_longitude: '109.095887',
-//     tr_longitude: '109.149359',
-//     limit: '',
-//     currency: 'USD',
-//     open_now: 'false',
-//     lunit: 'km',
-//     lang: 'en_GB'
-//   },
-//   headers: {
-//     'X-RapidAPI-Key': 'b645d2d559mshfaba903111cc2c9p155c10jsn43dc6a6cfe2a',
-//     'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-//   }
-// };
-
-// axios.request(options).then(function (response) {
-// 	console.log(response.data);
-// }).catch(function (error) {
-// 	console.error(error);
-// });
-
-export const getPlacesData = async (sw, ne) => {
+export const getPlacesData = async (type, sw, ne) => {
     try {
         const  {data: {data}} = await axios.get(`https://travel-advisor.p.rapidapi.com/${type}/list-in-boundary`, {
             params: {
@@ -35,11 +11,11 @@ export const getPlacesData = async (sw, ne) => {
                 tr_longitude: ne.lng,
                 // currency: 'KES',
                 // open_now: 'false',
-                // lunit: 'km',
-                // lang: 'en_GB'
+                lunit: 'km',
+                lang: 'en_GB'
               },
               headers: {
-                'X-RapidAPI-Key': 'b645d2d559mshfaba903111cc2c9p155c10jsn43dc6a6cfe2a',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_TRAVEL_API_KEY,
                 'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
               }
         })
@@ -48,3 +24,21 @@ export const getPlacesData = async (sw, ne) => {
         console.log(error)
     }
 }
+
+export const getWeatherData = async (lat, lng) => {
+    try {
+      if (lat && lng) {
+        const { data } = await axios.get('https://community-open-weather-map.p.rapidapi.com/find', {
+          params: { lat, lon: lng },
+          headers: {
+            'x-rapidapi-key': process.env.REACT_APP_RAPID_API_WEATHER_API_KEY,
+            'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
+          },
+        });
+  
+        return data;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
