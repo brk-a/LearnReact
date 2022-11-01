@@ -1,4 +1,4 @@
-import { build } from '@reduxjs/toolkit/dist/query/core/buildMiddleware/cacheLifecycle'
+// import { build } from '@reduxjs/toolkit/dist/query/core/buildMiddleware/cacheLifecycle'
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query'
 
 const cryptoApiHeaders = {
@@ -14,6 +14,6 @@ export const cryptoApi = createApi({
     reducerPath: 'cryptoApi',
     baseQuery: fetchBaseQuery({baseUrl}),
     endpoints: (builder) => ({
-        getCryptos: builder.query({query: () => createRequest('')})
+        getCryptos: builder.query({query: () => createRequest('/exchanges')})
     })
 })
