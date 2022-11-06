@@ -29,7 +29,7 @@ const App = () => {
 
         <div className='footer'>
           <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
-            NF Crypto <br/>
+            NF Crypto ©<br/>
             Putting the <i>cry</i> in crypto since a long time ago <br/>
             All rights reserved
           </Typography.Title>
