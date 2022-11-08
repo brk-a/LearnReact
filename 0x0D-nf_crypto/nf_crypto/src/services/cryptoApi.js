@@ -8,11 +8,18 @@ const cryptoApiHeaders = {
 const baseUrl = process.env.REACT_RAPID_API_BASE_URL
 
 const createRequest = (url) => ({url, headers: cryptoApiHeaders})
-// const createRequest = (url) => url
 
 export const cryptoApi = createApi({
     reducerPath: 'cryptoApi',
     baseQuery: fetchBaseQuery({baseUrl}),
+    // prepareHeaders: (cryptoApiHeaders, { getState }) => {
+    //     const token = getState().auth.token
+    //     if (token) {
+    //         cryptoApiHeaders.set('authorization', `Bearer ${token}`)
+    //       }
+      
+    //       return cryptoApiHeaders
+    //     },
     endpoints: (builder) => ({
         getCryptos: builder.query({query: () => createRequest('/coins')})
     })
