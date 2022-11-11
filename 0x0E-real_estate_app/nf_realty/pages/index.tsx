@@ -5,7 +5,7 @@ import Property from '../components/Property'
 
 import {baseUrl, fetchApi} from '../utils/fetchApi'
 
-const Banner = ({purpose, imageUrl, title1, title2, desc1, desc2, linkName, buttonText}) => (
+const Banner = ({purpose, imageUrl, title1, title2, desc1, desc2, linkName, buttonText}:any) => (
   <Flex flexWrap={`wrap`} justifyContent='center' alignItems={`center`} m='10'>
     <Image src={imageUrl} width={500} height={300} alt='banner'/>
 
@@ -26,7 +26,7 @@ const Banner = ({purpose, imageUrl, title1, title2, desc1, desc2, linkName, butt
   </Flex>
 )
 
-export default function Home({propertiesForRent, propertiesForSale}) {
+export default function Home({propertiesForRent, propertiesForSale}:any) {
   return (
     <Box>
       <h1>NF Realty</h1>
@@ -43,7 +43,7 @@ export default function Home({propertiesForRent, propertiesForSale}) {
       />
 
      <Flex flexWrap={`wrap`}>
-        {propertiesForRent.map((property) => (
+        {propertiesForRent.map((property:any) => (
           <Property key={property.id} property={property}></Property>
         ))}
       </Flex>
@@ -60,7 +60,7 @@ export default function Home({propertiesForRent, propertiesForSale}) {
       />
 
       <Flex flexWrap={`wrap`}>
-        {propertiesForSale.map((property) => (
+        {propertiesForSale.map((property:any) => (
           <Property key={property.id} property={property}></Property>
         ))}
       </Flex>
