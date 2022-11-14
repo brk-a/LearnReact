@@ -7,6 +7,8 @@ import SearchFilters from "../components/SearchFilters";
 import Property from "../components/Property";
 import noresult from '../assets/images/noresult.png'
 
+import { baseUrl, fetchApi } from "../utils/fetchApi";
+
 const Search = ({properties}: any) => {
     const [searchFilters, setSearchFilters] = useState(false)
     const router = useRouter()
@@ -51,14 +53,27 @@ const Search = ({properties}: any) => {
     )
 }
 
-export default Search
 
-export async function getStaticProps() {
-    const purpose = {}
+export async function getServerSideProps({query}:any) {
+    const purpose = query.purpose || 'for=rent'
+    const rentFrequency = query.rentFrequency || 'yearly'
+    const minPrice = query.minPric || '0'
+    const maxPrice = query.maxPrice || '1000000'
+    const roomsMin = query.roomsMin || '0'
+    const bathsMin = query.bathsMin || '0'
+    const sort = query.sort || 'price-desc'
+    const areaMax = query.areaMax || '3500'
+    const locationExternalIDs = query.locationExternalIDs || '5002'
+    const categoryExternalID = query.categoryExternalID || '4'
+
+    const data = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=${locationExternalIDs}&purpose=${purpose}&categoryExternalID=${categoryExternalID}&bathsMin=${bathsMin}&rentFrequency=${rentFrequency}&priceMin=${minPrice}&priceMax=${maxPrice}&roomsMin=${roomsMin}&sort=${sort}&areaMax=${areaMax}`);
+
 
     return {
       props: {
-        propertiesForSale: purpose,
+        properties: data?.hits,
       }
     }
   }
+
+  export default Search
