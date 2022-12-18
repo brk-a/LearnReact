@@ -1,6 +1,7 @@
 # Project Stopify
 
 Develop a React.js Music Application. 
+<img src='./src/assets/spotify.png'/>
 
 Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
 
