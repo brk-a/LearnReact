@@ -2,8 +2,8 @@ import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import {Nav, Navbar, Container, Row, Col} from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import {Switch} from 'react-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+import {Route, Switch} from 'react-dom'
 import {CreateStudent, EditStudent, StudentList} from './components'
 
 function App() {
@@ -39,10 +39,14 @@ function App() {
             <Col md={12}>
               <div className='wrapper'>
                 <Switch>
-                  <Route exact path='/' component={CreateStudent}></Route>
+                  {/* <Route exact path='/' component={CreateStudent}></Route>
                   <Route exact path='/create-student' component={CreateStudent}></Route>
                   <Route exact path='/edit-student/:id' component={EditStudent}></Route>
-                  <Route exact path='/student-list' component={StudentList}></Route>
+                  <Route exact path='/student-list' component={StudentList}></Route> */}
+                  <Route exact path='/'> <CreateStudent/> </Route>
+                  <Route exact path='/create-student'> <CreateStudent/> </Route>
+                  <Route exact path='/edit-student/:id'> <EditStudent/> </Route>
+                  <Route exact path='/student-list'> <StudentList/> </Route>
                 </Switch>
               </div>
             </Col>

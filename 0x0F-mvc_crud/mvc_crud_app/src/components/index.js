@@ -4,7 +4,7 @@ import StudentForm from "./StudentForm";
 import StudentList from "./StudentList";
 import StudentTableRow from "./StudentTableRow";
 
-export{
+export {
     CreateStudent,
     EditStudent,
     StudentForm,
