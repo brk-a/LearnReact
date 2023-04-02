@@ -4,7 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import {Nav, Navbar, Container, Row, Col} from 'react-bootstrap'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import {Route, Switch} from 'react-dom'
-import {CreateStudent, EditStudent, StudentList} from './components'
+import CreateStudent from './components/CreateStudent'
+import EditStudent from './components/EditStudent'
+import StudentList from './components/StudentList'
 
 function App() {
   return (

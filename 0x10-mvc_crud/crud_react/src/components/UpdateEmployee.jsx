@@ -1,8 +1,53 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import { Button, Checkbox, Form } from 'semantic-ui-react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const UpdateEmployee = () => {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [checkbox, setCheckbox] = useState(false)
+  const [id, setId] = useState(undefined)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    setId(localStorage.getItem('ID'))
+    setFirstName(localStorage.getItem('First Name'))
+    setLastName(localStorage.getItem('Last Name'))
+    setCheckbox(localStorage.getItem('Checkbox Value'))
+  }, [])
+  
+  const updateData = () => {
+    axios.put(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd/${id}`, {
+        firstName,
+        lastName,
+        checkbox
+    }).then(() => {
+      navigate('./read')
+    })
+  }
+
+  const changeFirstName = (e) => setFirstName(e.target.value)
+  const changeLastName = (e) => setLastName(e.target.value)
+  const changeCheckbox = (e) => setCheckbox(!checkbox)
+
   return (
-    <div>UpdateEmployee</div>
+    <div>
+        <Form className="create-form">
+            <Form.Field>
+              <label>First Name</label>
+              <input placeholder='First Name' onChange={changeFirstName} value={firstName}/>
+            </Form.Field>
+            <Form.Field>
+              <label>Last Name</label>
+              <input placeholder='Last Name' onChange={changeLastName} value={lastName}/>
+            </Form.Field>
+            <Form.Field>
+              <Checkbox label='I agree to the Terms and Conditions' onChange={changeCheckbox} value={checkbox}/>
+            </Form.Field>
+            <Button type='submit' onClick={updateData}>Update</Button>
+        </Form>
+    </div>
   )
 }
 
