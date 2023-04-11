@@ -7,7 +7,7 @@ const UpdateEmployee = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [checkbox, setCheckbox] = useState(false)
-  const [id, setId] = useState(undefined)
+  const [id, setId] = useState('')
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const UpdateEmployee = () => {
 
   const changeFirstName = (e) => setFirstName(e.target.value)
   const changeLastName = (e) => setLastName(e.target.value)
-  const changeCheckbox = (e) => setCheckbox(!checkbox)
+  const changeCheckbox = () => setCheckbox(!checkbox)
 
   return (
     <div>
