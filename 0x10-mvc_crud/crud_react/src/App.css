@@ -19,10 +19,22 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.create-form label{
+.create-form label {
   color: whitesmoke !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px !important;
+}
+
+.ui-three-buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-active-button{
+  color: whitesmoke !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px !important;
+  margin-right: 15px;
 }
 
 /* .logo {

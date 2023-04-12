@@ -4,6 +4,8 @@
 
 [LinkedIn](https://www.linkedin.com/in/fnjakai)|[Github](https://www.github.com/brk-a)
 
+<img src="./src/assets/screenshot_0" alt="project-screenshot"/>
+
 Create a simple app that demontrates CRUD operations using 
 * [Vite](https://vitejs.dev/) + [React](https://react.dev/)
 * [Axios](https://axios-http.com/docs/intro)
