@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => (
     <div className="ui-three-buttons">
         <NavLink to='/create'>
+            <button className="ui-active-button">Home</button>
+        </NavLink>
+        <NavLink to='/create'>
             <button className="ui-active-button">Create</button>
         </NavLink>
         <NavLink to='/read'>
