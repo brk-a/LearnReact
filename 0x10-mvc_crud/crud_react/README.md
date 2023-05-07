@@ -27,7 +27,7 @@ Data and schema on `Mock API` are the model. When the state of said data changes
 
 [def]: https://www.linkedin.com/in/fnjakai
 [def2]: https://www.github.com/brk-a
-[def3]: https://www.simple-crud-ops.vercel.app
+[def3]: https://simple-crud-ops.vercel.app
 [def4]: https://vitejs.dev/
 [def5]: https://react.dev/
 [def6]: https://axios-http.com/docs/intro
