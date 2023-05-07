@@ -7,7 +7,7 @@ const UpdateEmployee = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [checkbox, setCheckbox] = useState(false)
-  const [id, setId] = useState('')
+  const [id, setId] = useState(null)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -18,18 +18,23 @@ const UpdateEmployee = () => {
   }, [])
   
   const updateData = () => {
-    axios.put(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd/${id}`, {
+    try {
+      axios.put(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd/${id}`, {
         firstName,
         lastName,
         checkbox
-    }).then(() => {
-      navigate('./read')
-    })
+      }).then(() => {
+        navigate('/read')
+      })
+    } catch (error) {
+      console.log('updateData error: ', error)
+      
+    }
   }
 
   const changeFirstName = (e) => setFirstName(e.target.value)
   const changeLastName = (e) => setLastName(e.target.value)
-  const changeCheckbox = () => setCheckbox(!checkbox)
+  const changeCheckbox = (e) => setCheckbox(!checkbox)
 
   return (
     <div>
@@ -43,7 +48,7 @@ const UpdateEmployee = () => {
               <input placeholder='Last Name' onChange={changeLastName} value={lastName}/>
             </Form.Field>
             <Form.Field>
-              <Checkbox label='I agree to the Terms and Conditions' onChange={changeCheckbox} value={checkbox}/>
+              <Checkbox label='I agree to the Terms and Conditions' checked={checkbox} onChange={changeCheckbox} />
             </Form.Field>
             <Button type='submit' onClick={updateData}>Update</Button>
         </Form>

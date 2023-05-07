@@ -12,7 +12,7 @@ const CreateEmployee = () => {
 
     const changeFirstName = (e) => setFirstName(e.target.value)
     const changeLastName = (e) => setLastName(e.target.value)
-    const changeCheckbox = (e) => setCheckbox(!checkbox)
+    const changeCheckbox = () => setCheckbox(!checkbox)
 
     const postData = () => (
         axios.post(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd`, {
@@ -20,7 +20,7 @@ const CreateEmployee = () => {
             lastName,
             checkbox
         }).then(() => {
-            navigate('./read')
+            navigate('/read')
         })
     )
 

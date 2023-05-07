@@ -13,7 +13,11 @@ const ReadEmployee = () => {
   }, [])
 
   const setData = (data) => {
-    console.log(data)
+    let { id, firstName, lastName, checkbox } = data;
+    localStorage.setItem('ID', id);
+    localStorage.setItem('First Name', firstName);
+    localStorage.setItem('Last Name', lastName);
+    localStorage.setItem('Checkbox Value', checkbox)
   }
   const getData = () => {
     axios.get(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd`)
@@ -23,7 +27,7 @@ const ReadEmployee = () => {
   }
   const handleDelete = (id) => {
     axios.delete(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd/${id}`)
-      .then(() => {getData()})
+      .then(() => getData())
   }
   
   return (
