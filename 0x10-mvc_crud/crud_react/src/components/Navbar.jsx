@@ -12,9 +12,9 @@ const Navbar = () => (
         <NavLink to='/read'>
             <button className="ui-active-button">Read</button>
         </NavLink>
-        <NavLink to='/update'>
+        {/* <NavLink to='/update'>
             <button className="ui-active-button">Update</button>
-        </NavLink>
+        </NavLink> */}
     </div>
   )
 export default Navbar
