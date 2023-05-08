@@ -18,7 +18,6 @@ const ReadEmployee = () => {
     localStorage.setItem('First Name', firstName);
     localStorage.setItem('Last Name', lastName);
     localStorage.setItem('Checkbox Value', checkbox)
-    console.log(localStorage)
   }
   const getData = () => {
     try {
