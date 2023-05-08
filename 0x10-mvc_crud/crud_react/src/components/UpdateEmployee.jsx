@@ -14,7 +14,7 @@ const UpdateEmployee = () => {
     setId(localStorage.getItem('ID'))
     setFirstName(localStorage.getItem('First Name'))
     setLastName(localStorage.getItem('Last Name'))
-    setCheckbox(localStorage.getItem('Checkbox Value'))
+    setCheckbox(localStorage.getItem('Checkbox Value') === 'true' ? true : false)
   }, [])
   
   const updateData = () => {
@@ -34,7 +34,7 @@ const UpdateEmployee = () => {
 
   const changeFirstName = (e) => setFirstName(e.target.value)
   const changeLastName = (e) => setLastName(e.target.value)
-  const changeCheckbox = (e) => setCheckbox(!checkbox)
+  const changeCheckbox = () => setCheckbox(!checkbox)
 
   return (
     <div>
@@ -48,7 +48,7 @@ const UpdateEmployee = () => {
               <input placeholder='Last Name' onChange={changeLastName} value={lastName}/>
             </Form.Field>
             <Form.Field>
-              <Checkbox label='I agree to the Terms and Conditions' checked={checkbox} onChange={changeCheckbox} />
+              <Checkbox label='I agree to the Terms and Conditions' checked={checkbox} onClick={changeCheckbox} />
             </Form.Field>
             <Button type='submit' onClick={updateData}>Update</Button>
         </Form>

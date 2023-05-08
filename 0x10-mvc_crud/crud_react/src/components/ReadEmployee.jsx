@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Button, Checkbox, Form } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import { Table } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
@@ -18,16 +18,25 @@ const ReadEmployee = () => {
     localStorage.setItem('First Name', firstName);
     localStorage.setItem('Last Name', lastName);
     localStorage.setItem('Checkbox Value', checkbox)
+    console.log(localStorage)
   }
   const getData = () => {
-    axios.get(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd`)
-        .then((getData) => {
-             setAPIData(getData.data);
-         })
+    try {
+      axios.get(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd`)
+      .then((getData) => {
+           setAPIData(getData.data);
+       })
+    } catch (error) {
+      console.log('getData error: ', error)
+    }
   }
   const handleDelete = (id) => {
-    axios.delete(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd/${id}`)
+    try {
+      axios.delete(`https://6427d6f9161067a83b01dfa2.mockapi.io/ghostCoLtd/${id}`)
       .then(() => getData())
+    } catch (error) {
+      console.log('getData error: ', error)
+    }
   }
   
   return (
@@ -49,7 +58,6 @@ const ReadEmployee = () => {
               <Table.Row key={i}>
                 <Table.Cell>{data.firstName}</Table.Cell>
                 <Table.Cell>{data.lastName}</Table.Cell>
-                {/* <Table.Cell>goatmatata@ghost.com</Table.Cell> */}
                 <Table.Cell>{data.checkbox ? 'Checked' : 'Unchecked'}</Table.Cell>
                 <Table.Cell>
                 <Link to='/update'>
