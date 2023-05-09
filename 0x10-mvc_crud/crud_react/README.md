@@ -38,7 +38,7 @@ The Controller is an intermediary; it processes all the incoming requests, manip
 
 #### MVC in chart format
 
-<img src="./src/assets/mvc_process" alt="process-mvc"/>
+<img src="./src/assets/mvc_process.svg" alt="process-mvc"/>
 
 _User_ uses _Controller_ to manipulate _Model_ that updates _View_ (using _Controller_) which is what _User_ sees
 
