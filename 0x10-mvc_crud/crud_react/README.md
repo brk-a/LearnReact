@@ -23,7 +23,7 @@ Here is a summary of what each term is, its coresponding HTTP request and SQL fu
 ||Operation|What it does|HTTP|SQL|
 |:---:|:---:|:---:|:---:|:---:|
 |C|Create|adds a new record/document to database|POST|INSERT|
-|R|Read|returns records/documents from database table/collection/bucket based on specified criteria|GET|SELECT|
+|R|Read|returns records/documents from database table/collection based on specified criteria|GET|SELECT|
 |U|Update|modifies existing records/documents in database based on specified criteria|PUT|UPDATE|
 |D|Delete|remove one, some or all records/documents from database|DELETE|DELETE|
 
