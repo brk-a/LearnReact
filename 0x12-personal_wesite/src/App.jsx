@@ -31,7 +31,7 @@ const App = () => {
           {/* <Hive></Hive> */}
           <Pitch></Pitch>
           <Testimonials></Testimonials>
-          <Clients></Clients>
+          {/* <Clients></Clients> */}
           {/* <CallToAction></CallToAction> */}
           <Footer></Footer>
         </div>

@@ -30,7 +30,7 @@ const Pitch = () => {
           {/* {features.map((feature, index) => (
             <FeatureCard key={feature.id} {...feature} index={index}/>
           ))} */}
-          <p className={`${styles.paragraph} max-w-[570px] mt-5 mr-10`}>
+          <p className={`${styles.paragraph} max-w-[370px] mt-5 mr-10`}>
               The name’s Njakai; F Njakai. I am a full stack software developer with a year’s worth of
               experience. Before that, I was a financial analyst for three years.
               My stack is JS, React.js and Next.js in the front-end and Python, JS, Django and Postgres in
