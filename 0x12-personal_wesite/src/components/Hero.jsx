@@ -25,7 +25,7 @@ const Hero = () => {
             <span className="text-gradient">F Njakai</span><br className="sm:block hidden"/>{' '}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+            {/* <GetStarted /> */}
           </div>
         </div>
 
@@ -42,14 +42,21 @@ const Hero = () => {
       </div>
 
       <div  className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="robot" className='w-[100%] h-[100%] relative z-[5]'/>
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0"/>
+        {/* <img src={robot} alt="robot" className='w-[100%] h-[100%] relative z-[5]'/> */}
+        <iframe src="https://www.youtube.com/watch?v=a3YDuqTb7xY" className={`w-[750px] h-[500px] border-none`}></iframe>
+        {/* <video width={750} height={500} controls>
+          <source src="https://www.youtube.com/watch?v=a3YDuqTb7xY" type="video/mov"></source>
+          <source src="https://www.youtube.com/watch?v=a3YDuqTb7xY" type="video/wmv"></source>
+          <source src="https://www.youtube.com/watch?v=a3YDuqTb7xY" type="video/mp4"></source>
+          <source src="https://www.youtube.com/watch?v=a3YDuqTb7xY" type="video/mpeg4"></source>
+        </video> */}
+        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0"/>
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40"/>
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20"/>
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20"/> */}
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
+        {/* <GetStarted /> */}
       </div>
     </section>
   )

@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './style'
 
 import {Navbar, Hero, Hive, Stats, Billing, Business, CallToAction, CardDeals, Clients, Footer, Testimonials} from './components'
+import Portfolio from './components/Portfolio'
+import Pitch from './components/Pitch'
 
 const App = () => {
   return (
@@ -23,12 +25,14 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           {/* <Stats></Stats> */}
           {/* <Business></Business> */}
+          <Portfolio></Portfolio>
           {/* <Billing></Billing> */}
           <CardDeals></CardDeals>
           {/* <Hive></Hive> */}
+          <Pitch></Pitch>
           <Testimonials></Testimonials>
           <Clients></Clients>
-          <CallToAction></CallToAction>
+          {/* <CallToAction></CallToAction> */}
           <Footer></Footer>
         </div>
       </div>

@@ -28,6 +28,10 @@ import python from "./python.png"
 import react from "./react.png"
 import next from "./next-js-icon-seeklogo.com.svg"
 import django from "./django-seeklogo.com.svg"
+import fnjakai from "./F Njakai.png"
+import github from "./github-mark-white.svg"
+import wordle from "./wordle.svg"
+import spotify from "./spotify.svg"
 
 export {
   airbnb,
@@ -60,4 +64,8 @@ export {
   react,
   next,
   django,
+  fnjakai,
+  github,
+  wordle,
+  spotify,
 };

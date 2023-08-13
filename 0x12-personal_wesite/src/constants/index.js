@@ -1,21 +1,21 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, spotify, wordle, linkedin, twitter, github, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Bio",
+  },
+  // {
+  //   id: "features",
+  //   title: "Features",
+  // },
+  {
+    id: "portfolio",
+    title: "Portfolio",
   },
   {
-    id: "features",
-    title: "Features",
-  },
-  {
-    id: "product",
-    title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
+    id: "pitch",
+    title: "Elevator Pitch",
   },
 ];
 
@@ -43,6 +43,41 @@ export const features = [
   },
 ];
 
+export const portfolio = [
+  {
+    id: "portfolio-1",
+    icon: spotify,
+    title: "Spotify Clone",
+    content:
+      "An app that mimics the core functions of the Spotify app",
+    link: 'https://spotify-clone-eight-beta.vercel.app/',
+  },
+  {
+    id: "portfolio-2",
+    icon: shield,
+    title: "Data Analysis w. Python",
+    content:
+      "A project that shows the use of Pandas, Numpy and Seaborn in EDA",
+    link: 'https://github.com/brk-a/alx-t-data-analyst',
+  },
+  {
+    id: "portfolio-3",
+    icon: wordle,
+    title: "Wordle",
+    content:
+      "An app that mimics the core functions of the Wordle app",
+    link: 'https://wordle-liard.vercel.app/',
+  },
+  {
+    id: "portfolio-4",
+    icon: star,
+    title: "Team Slide Deck",
+    content:
+      "A slide deck by Vanguard team",
+    link: 'https://www.canva.com/design/DAFoh1Omze8/66V_DxtcFx-VnjtZhPzGRg/edit',
+  },
+];
+
 export const feedback = [
   {
     id: "feedback-1",
@@ -63,7 +98,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "Yo, bruv, Frank's the bomb. D'you feel me, fam? He solves problems like BoJo tells porkies.",
+      "Yo, bruv, Frank's the bomb. Man solves problems like BoJo tells porkies.",
     name: "Paka the Cat",
     title: "Founder, Catnip & Chill",
     img: people03,
@@ -155,25 +190,30 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
+  // {
+  //   id: "social-media-1",
+  //   icon: instagram,
+  //   link: "https://www.instagram.com/",
+  // },
+  // {
+  //   id: "social-media-2",
+  //   icon: facebook,
+  //   link: "https://www.facebook.com/",
+  // },
   {
     id: "social-media-3",
+    icon: github,
+    link: "https://www.github.com/brk-a",
+  },  
+  {
+    id: "social-media-4",
     icon: twitter,
     link: "https://www.twitter.com/",
   },
   {
-    id: "social-media-4",
+    id: "social-media-5",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/fnjakai",
   },
 ];
 
