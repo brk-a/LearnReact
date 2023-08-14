@@ -32,7 +32,7 @@ const Footer = () => (
 
     <div className="w-full flex justify-between items-center md:flex-row flox-col pt-6 border-t-[1px] border-t-[#3f3e45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        2023 FNjakai &reg;. All rights reserved.
+        2023 FNjakai &reg; &emsp; &emsp; &emsp; All rights reserved.
       </p>
       <div className="flex flex-row mt-6 md:mt-0">
         {socialMedia.map((social, index) => (
