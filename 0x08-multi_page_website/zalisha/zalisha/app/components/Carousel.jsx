@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel } from "react-responsive-carousel";
-import { items } from "../public/Items.json";
+import {carousel} from "..constants/"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "../styles/Responsive.module.css"
 
