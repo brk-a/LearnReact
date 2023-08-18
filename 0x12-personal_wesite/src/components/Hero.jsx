@@ -1,6 +1,6 @@
 // import React from 'react'
 import styles from "../style"
-import { discount, robot } from "../assets"
+import { discount, robot, vid } from "../assets"
 import GetStarted from '../components/GetStarted'
 
 const Hero = () => {
@@ -42,8 +42,9 @@ const Hero = () => {
       </div>
 
       <div  className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+      <iframe src={vid} className={`w-[750px] h-[500px] border-none`}></iframe>
         {/* <img src={robot} alt="robot" className='w-[100%] h-[100%] relative z-[5]'/> */}
-        <iframe src="https://www.youtube.com/watch?v=a3YDuqTb7xY" className={`w-[750px] h-[500px] border-none`}></iframe>
+        {/* <iframe src="https://www.youtube.com/watch?v=a3YDuqTb7xY" className={`w-[750px] h-[500px] border-none`}></iframe> */}
         {/* <video width={750} height={500} controls>
           <source src="https://www.youtube.com/watch?v=a3YDuqTb7xY" type="video/mov"></source>
           <source src="https://www.youtube.com/watch?v=a3YDuqTb7xY" type="video/wmv"></source>

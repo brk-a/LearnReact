@@ -32,6 +32,7 @@ import fnjakai from "./F Njakai.png"
 import github from "./github-mark-white.svg"
 import wordle from "./wordle.svg"
 import spotify from "./spotify.svg"
+import vid from "./vid.webm"
 
 export {
   airbnb,
@@ -68,4 +69,5 @@ export {
   github,
   wordle,
   spotify,
+  vid,
 };

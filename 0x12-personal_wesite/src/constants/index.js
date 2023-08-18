@@ -63,10 +63,10 @@ export const portfolio = [
   {
     id: "portfolio-3",
     icon: wordle,
-    title: "Wordle",
+    title: "FRSH",
     content:
-      "An app that mimics the core functions of the Wordle app",
-    link: 'https://wordle-liard.vercel.app/',
+      "An online martketplace for fresh, organic vegetables, spices and herbs",
+    link: 'https://frsh-gold.vercel.app/',
   },
   {
     id: "portfolio-4",
