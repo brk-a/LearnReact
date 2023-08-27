@@ -61,10 +61,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
+  text-fill-color: transparent;
 }
 
-/* .bg-blue-gradient {
+.bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
     #def9fa -43.27%,
@@ -74,8 +74,8 @@ body {
     #5ce1e6 51.94%,
     #33bbcf 90.29%
   );
-} */
-.bg-blue-gradient {
+}
+/* .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
     #ffe34d -43.27%,
@@ -85,7 +85,7 @@ body {
     #e6c200 51.94%,
     #ccac00 90.29%
   );
-}
+} */
 
 .bg-black-gradient {
   background: linear-gradient(
@@ -166,8 +166,8 @@ body {
 }
 
 .blue__gradient {
-  /* background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%); */
-  /* background: linear-gradient(180deg, #ffdf33 0%, #ffdf00 100%); */
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  background: linear-gradient(180deg, #ffdf33 0%, #ffdf00 100%);
   filter: blur(123px);
 }
 

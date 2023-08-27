@@ -1,11 +1,23 @@
 "use client"
 import React from 'react'
 import styles from './style'
-
-import {Navbar, Hero, Hive, Stats, Billing, Business, CallToAction, CardDeals, Clients, Footer, Testimonials} from './components'
+import {
+  Navbar,
+  Hero,
+  Hive,
+  Stats,
+  Billing,
+  Business,
+  CallToAction,
+  CardDeals,
+  Clients,
+  Footer,
+  Testimonials,
+  Example,
+} from './components'
 import Portfolio from './components/Portfolio'
 import Pitch from './components/Pitch'
-import ResponsiveCarousel from './components/Carousel'
+
 
 const App = () => {
   return (
@@ -29,7 +41,7 @@ const App = () => {
           {/* <Business></Business> */}
           <Portfolio></Portfolio>
           {/* <Billing></Billing> */}
-          <ResponsiveCarousel/>
+          <Example/>
           <CardDeals></CardDeals>
           {/* <Hive></Hive> */}
           <Pitch></Pitch>
