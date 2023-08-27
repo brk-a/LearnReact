@@ -71,6 +71,7 @@ function Example(args) {
       next={next}
       previous={previous}
       {...args}
+      // style={{"height": "750px"}}
     >
       <CarouselIndicators
         items={items}

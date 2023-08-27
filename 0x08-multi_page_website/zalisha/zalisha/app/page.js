@@ -29,6 +29,12 @@ const App = () => {
         </div>
       </div>
 
+      <div className={`bg-primary ${styles.flexStart} `}>
+        <div className={`${styles.boxWidth}`}>
+          <Example/>
+        </div>
+      </div>
+
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
          <Hero/>
@@ -41,7 +47,6 @@ const App = () => {
           {/* <Business></Business> */}
           <Portfolio></Portfolio>
           {/* <Billing></Billing> */}
-          <Example/>
           <CardDeals></CardDeals>
           {/* <Hive></Hive> */}
           <Pitch></Pitch>
