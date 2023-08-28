@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './style'
-
 import {Navbar, Hero, Hive, Stats, Billing, Business, CallToAction, CardDeals, Clients, Footer, Testimonials} from './components'
 import Portfolio from './components/Portfolio'
 import Pitch from './components/Pitch'
