@@ -3,19 +3,19 @@ import { people01, people02, people03, facebook, instagram, spotify, wordle, lin
 export const navLinks = [
   {
     id: "home",
-    title: "Bio",
-  },
-  // {
-  //   id: "features",
-  //   title: "Features",
-  // },
-  {
-    id: "portfolio",
-    title: "Portfolio",
+    title: "Home",
   },
   {
-    id: "pitch",
-    title: "Elevator Pitch",
+    id: "success-tories",
+    title: "Success Stories",
+  },
+  {
+    id: "contact-s",
+    title: "Contact Us",
+  },
+  {
+    id: "donate",
+    title: "Donate",
   },
 ];
 
@@ -190,21 +190,21 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  // {
-  //   id: "social-media-1",
-  //   icon: instagram,
-  //   link: "https://www.instagram.com/",
-  // },
-  // {
-  //   id: "social-media-2",
-  //   icon: facebook,
-  //   link: "https://www.facebook.com/",
-  // },
   {
-    id: "social-media-3",
-    icon: github,
-    link: "https://www.github.com/brk-a",
-  },  
+    id: "social-media-1",
+    icon: instagram,
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: "social-media-2",
+    icon: facebook,
+    link: "https://www.facebook.com/",
+  },
+  // {
+  //   id: "social-media-3",
+  //   icon: github,
+  //   link: "https://www.github.com/brk-a",
+  // },  
   {
     id: "social-media-4",
     icon: twitter,

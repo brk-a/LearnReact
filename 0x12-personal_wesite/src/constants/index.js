@@ -78,6 +78,36 @@ export const portfolio = [
   },
 ];
 
+export const portfolioItems = [
+  {
+    title: "Spotify Clone",
+    content: "An app that mimics the core functions of the Spotify app",
+    link: 'https://spotify-clone-eight-beta.vercel.app/',
+    src: 'https://picsum.photos/id/123/1200/400',
+    altText: 'Slide 1',
+    caption: "An app that mimics the core functions of the Spotify app",
+    key: 1,
+  },
+  {
+    title: "Data Analysis w. Python",
+    content: "A project that shows the use of Pandas, Numpy and Seaborn in EDA",
+    link: 'https://github.com/brk-a/alx-t-data-analyst',
+    src: 'https://picsum.photos/id/456/1200/400',
+    altText: 'Slide 2',
+    caption: "A project that shows the use of Pandas, Numpy and Seaborn in EDA",
+    key: 2,
+  },
+  {
+    title: "FRSH",
+    content: "An online martketplace for fresh, organic vegetables, spices and herbs",
+    link: 'https://frsh-gold.vercel.app/',
+    src: 'https://picsum.photos/id/678/1200/400',
+    altText: 'Slide 3',
+    caption: "An online martketplace for fresh, organic vegetables, spices and herbs",
+    key: 3,
+  },
+];
+
 export const feedback = [
   {
     id: "feedback-1",

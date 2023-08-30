@@ -2,6 +2,7 @@
 import { portfolio } from "../constants"
 import styles, {layout} from "../style"
 import Button from  './Button'
+import Example from "./Carousel"
 
 const FeatureCard = ({icon, title, content, index}) => {
   return(
@@ -46,6 +47,7 @@ const Portfolio = () => {
         {portfolio.map((feature, index) => (
           <a key={index} href={feature.link}>
             <FeatureCard key={feature.id} {...feature} index={index}/>
+            {/* <Example></Example> */}
           </a>
         ))}
       </div>
