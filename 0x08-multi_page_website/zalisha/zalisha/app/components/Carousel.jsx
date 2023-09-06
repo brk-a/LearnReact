@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import styles, { layout } from "../style"
 import {
   Carousel,
   CarouselItem,
@@ -67,6 +68,8 @@ function Example(args) {
   });
 
   return (
+    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -91,6 +94,8 @@ function Example(args) {
         onClickHandler={next}
       />
     </Carousel>
+    </div>
+    </section>
   );
 }
 

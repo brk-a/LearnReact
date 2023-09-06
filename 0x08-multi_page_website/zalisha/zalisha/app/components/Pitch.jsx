@@ -15,7 +15,7 @@ const FeatureCard = ({icon, title, content, index}) => {
         <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1">
           {title}
         </h4>
-        <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+        <p className="font-poppins font-normal text-white text-[16px] leading-[24px] mb-1">
           {content}
         </p>
       </div>
@@ -31,7 +31,7 @@ const Pitch = () => {
           {/* {features.map((feature, index) => (
             <FeatureCard key={feature.id} {...feature} index={index}/>
           ))} */}
-          <p className={`${styles.paragraph} max-w-[370px] mt-5 mr-10`}>
+          <p className={`${styles.paragraph} max-w-[370px] mt-5 mr-10 text-white`}>
               The name’s Njakai; F Njakai. I am a full stack software developer with a year’s worth of
               experience. Before that, I was a financial analyst for three years.
               My stack is JS, React.js and Next.js in the front-end and Python, JS, Django and Postgres in
@@ -46,7 +46,7 @@ const Pitch = () => {
           <h2 className={styles.heading2}>
              Elevator Pitch {/*<br className="sm:block hidden"/> we'll handle the money. */}
           </h2>
-          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5 text-white`}>
             This is the latest version of my elevator pitch
           </p>
           {/* <Button styles='mt-10'/> */}

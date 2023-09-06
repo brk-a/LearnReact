@@ -3,6 +3,7 @@ import styles from "../style"
 import {fnjakai, logo, zalishaGold} from '../assets'
 import{footerLinks, socialMedia} from '../constants'
 import Image from "next/image"
+import Link from "next/link"
 
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -21,8 +22,10 @@ const Footer = () => (
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">{footerLink.title}</h4>
             <ul className="list-none mt-4">
               {footerLink.links.map((link, index) => (
-                <li key={link.name} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerLink.links.length -1 ? 'mb-4': 'mb-9'}`}>
-                  {link.name}
+                <li key={link.name} className={`font-poppins font-normal text-[16px] leading-[24px]  hover:text-secondary cursor-pointer ${index !== footerLink.links.length -1 ? 'mb-4': 'mb-9'}`}>
+                  <Link href={link.link} className="text-white list-none no-underline">
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

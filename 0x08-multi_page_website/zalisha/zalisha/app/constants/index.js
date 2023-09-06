@@ -129,23 +129,23 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.hoobank.com/content/",
+        link: "content",
       },
       {
         name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        link: "how-it-works",
       },
       {
         name: "Create",
-        link: "https://www.hoobank.com/create/",
+        link: "create",
       },
       {
         name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        link: "explore",
       },
       {
         name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "terms-and-services",
       },
     ],
   },
@@ -154,36 +154,40 @@ export const footerLinks = [
     links: [
       {
         name: "Help Centre",
-        link: "https://www.hoobank.com/help-centre/",
+        link: "help-centre",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        link: "partners",
       },
       {
         name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "suggestions",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "blog",
       },
       {
         name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "newsletters",
       },
     ],
   },
   {
     title: "Partner",
     links: [
-      {
-        name: "Our Partners",
-        link: "https://www.hoobank.com/our-partner/",
-      },
+      // {
+      //   name: "Our Partners",
+      //   link: "our-partners",
+      // },
       {
         name: "Be a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        link: "be-a-partner",
+      },
+      {
+        name: "Donate",
+        link: "donate",
       },
     ],
   },
