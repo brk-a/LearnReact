@@ -26,7 +26,7 @@ const FeatureCard = ({icon, title, content, index}) => {
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className={layout.section}>
+    <section id="success-stories" className={layout.section}>
 
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>

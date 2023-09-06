@@ -1,6 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,9 +30,9 @@ body {
 /* @import url("hive.css"); */
 
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --black-gradient: linear-gradient(
@@ -182,23 +182,84 @@ body {
   background: var(--black-gradient);
 }
 
-.blue__gradient {
-  /* background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%); */
-  /* background: linear-gradient(180deg, #ffdf33 0%, #ffdf00 100%); */
+/* .blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  background: linear-gradient(180deg, #ffdf33 0%, #ffdf00 100%);
   filter: blur(123px);
-}
+} */
 
-.pink__gradient {
+/* .pink__gradient {
   background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 80%);
   filter: blur(900px);
-}
+} */
 
-.white__gradient {
+/* .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+} */
+
+
+/* hexagon-hive */
+.hex-container {
+  position: relative;
+  width: 480px;
+  height: 480px;
 }
 
-/* hive */
+.hex {
+  display: inline-block;
+  filter: url('#goo');
+  color: darkBlue;
+  width: 35%;
+  position: absolute;
+}
+
+.hex::before {
+  content: "";
+  display: block;
+  background: currentColor;
+  padding-top: 86.6%;
+  /* 100%*cos(30) */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.pos0 {
+  top: 0%;
+  left: 30%;
+}
+
+.pos1 {
+  top: 17%;
+  left: 0%;
+}
+
+.pos2 {
+  top: 17%;
+  left: 60%;
+}
+
+.pos3 {
+  top: 34%;
+  left: 30%;
+}
+
+.pos4 {
+  top: 51%;
+  left: 0%;
+}
+
+.pos5 {
+  top: 68%;
+  left: 30%;
+}
+
+.pos6 {
+  top: 51%;
+  left: 60%;
+}
+
+
+/* hive
 .hexagon {
   width: 545px;
   height: 300px;
@@ -250,5 +311,5 @@ body {
 .hex6 {
   top: 110px;
   left: 275px;
-}
+} */
 

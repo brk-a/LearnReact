@@ -11,20 +11,20 @@ import {
 const items = [
   {
     src: 'https://picsum.photos/id/123/1200/400',
-    altText: 'Slide 1',
-    caption: 'Slide 1',
+    altText: 'Global scale Local impact',
+    caption: 'Global scale Local impact',
     key: 1,
   },
   {
     src: 'https://picsum.photos/id/456/1200/400',
-    altText: 'Slide 2',
-    caption: 'Slide 2',
+    altText: 'Empowering communities to be self-sustainable',
+    caption: 'Empowering communities to be self-sustainable',
     key: 2,
   },
   {
     src: 'https://picsum.photos/id/678/1200/400',
-    altText: 'Slide 3',
-    caption: 'Slide 3',
+    altText: '100% of every dollar donated goes to sustainable projects',
+    caption: '100% of every dollar donated goes to sustainable projects',
     key: 3,
   },
 ];

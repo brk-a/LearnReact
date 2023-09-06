@@ -47,7 +47,7 @@ const App = () => {
           <Portfolio></Portfolio>
           {/* <Billing></Billing> */}
           <CardDeals></CardDeals>
-          {/* <Hive></Hive> */}
+          <Hive></Hive>
           <Pitch></Pitch>
           <Testimonials></Testimonials>
           {/* <Clients></Clients> */}

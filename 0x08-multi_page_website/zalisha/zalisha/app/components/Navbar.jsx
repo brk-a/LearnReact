@@ -14,12 +14,12 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <a href={`#home`}>
-        <Image src={zalishaGold} alt="logo" width={144} height={144} className=' py-2' />
+        <Image src={zalishaGold} alt="logo" width={144} height={144} className=' py-3' />
       </a>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`} key={nav.id}>
-            <a href={`#${nav.id}`}>
+            <a href={`#${nav.id}`} className='text-white no-underline'>
               {nav.title}
             </a>
           </li>
