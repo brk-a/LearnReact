@@ -7,7 +7,7 @@ const Hive = () => {
   return (
     <>
       <section className={layout.section}>
-        <div className={layout.sectionInfo}>
+        <div className={`${layout.sectionInfo} flex justify-center items-center`}>
           <div className={`hex-container`}>
             <div className={`hex pos0`}></div>
             <div className={`hex pos1`}></div>

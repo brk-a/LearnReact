@@ -202,14 +202,15 @@ body {
 /* hexagon-hive */
 .hex-container {
   position: relative;
-  width: 480px;
-  height: 480px;
+  width: 1080px;
+  height: 1080px;
 }
 
 .hex {
   display: inline-block;
   filter: url('#goo');
   color: darkBlue;
+  /* color: transparent; */
   width: 35%;
   position: absolute;
 }
@@ -226,6 +227,7 @@ body {
 .pos0 {
   top: 0%;
   left: 30%;
+  /* background-image: url('./assets/js.png'); */
 }
 
 .pos1 {

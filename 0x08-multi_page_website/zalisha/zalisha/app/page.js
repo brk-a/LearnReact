@@ -14,7 +14,7 @@ import {
   Testimonials,
   Example,
 } from './components'
-import Portfolio from './components/Portfolio'
+import SuccessStories from './components/SuccessStories'
 import Pitch from './components/Pitch'
 
 
@@ -44,11 +44,11 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           {/* <Stats></Stats> */}
           {/* <Business></Business> */}
-          <Portfolio></Portfolio>
+          <SuccessStories></SuccessStories>
           {/* <Billing></Billing> */}
-          <CardDeals></CardDeals>
-          {/* <Hive></Hive> */}
-          <Pitch></Pitch>
+          {/* <CardDeals></CardDeals> */}
+          <Hive></Hive>
+          {/* <Pitch></Pitch> */}
           <Testimonials></Testimonials>
           {/* <Clients></Clients> */}
           {/* <CallToAction></CallToAction> */}

@@ -35,7 +35,7 @@ const Hero = () => {
         {/* Payment Method. */}
         </h1>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 text-white`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto doloremque est rerum nulla suscipit, natus id laborum quisquam quaerat! 
         </p>
         

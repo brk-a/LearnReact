@@ -43,37 +43,34 @@ export const features = [
   },
 ];
 
-export const portfolio = [
+export const successStories = [
   {
-    id: "portfolio-1",
+    id: "success-story-1",
     icon: spotify,
-    title: "Spotify Clone",
+    title: "Training electricians at Nyahururu",
     content:
-      "An app that mimics the core functions of the Spotify app",
+      "Lorem ipsum dolor sit amet",
     link: 'https://spotify-clone-eight-beta.vercel.app/',
   },
   {
-    id: "portfolio-2",
+    id: "success-story-2",
     icon: shield,
-    title: "Data Analysis w. Python",
-    content:
-      "A project that shows the use of Pandas, Numpy and Seaborn in EDA",
+    title: "Supplies for Gicoco Primary School",
+    content: "Lorem ipsum dolor sit amet",
     link: 'https://github.com/brk-a/alx-t-data-analyst',
   },
   {
-    id: "portfolio-3",
+    id: "success-story-3",
     icon: wordle,
-    title: "Wordle",
-    content:
-      "An app that mimics the core functions of the Wordle app",
+    title: "Cultural exchange",
+    content: "Lorem ipsum dolor sit amet",
     link: 'https://wordle-liard.vercel.app/',
   },
   {
-    id: "portfolio-4",
+    id: "success-story-4",
     icon: star,
-    title: "Team Slide Deck",
-    content:
-      "A slide deck by Vanguard team",
+    title: "Back to the Homeland",
+    content: "Lorem ipsum dolor sit amet",
     link: 'https://www.canva.com/design/DAFoh1Omze8/66V_DxtcFx-VnjtZhPzGRg/edit',
   },
 ];
@@ -82,7 +79,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Frank is the GOAT. I am Goat Matata and I approve of this message.",
+      "Zalisha is great. I am Goat Matata and I approve of this message.",
     name: "Goat Matata",
     title: "Founder, The GOAT Podcast",
     image: people01,
@@ -90,7 +87,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Frank makes your life easier. If you have him, you have it.",
+      "Zalisha really does create impact.",
     name: "Dada Ng'ombe",
     title: "CEO, Chizi About Cheese",
     image: people02,
@@ -98,7 +95,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "Yo, bruv, Frank's the bomb. Man solves problems like BoJo tells porkies.",
+      "The Kenya experience through Zalisha has given me a new perspective.",
     name: "Paka the Cat",
     title: "Founder, Catnip & Chill",
     image: people03,
