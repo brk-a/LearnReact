@@ -1,9 +1,9 @@
 import Image from "next/image"
-import School from "../assets/school.svg"
+import school from "../assets/school.svg"
 
 const School = () => (
     <>
-    <Image src={School} alt="school" width={24} height={24}/>
+    <Image src={school} alt="school" width={24} height={24}/>
     </>
   )
 
