@@ -12,8 +12,8 @@ import {
 const items = [
   {
     src: 'https://picsum.photos/id/123/1200/400',
-    altText: 'Global scale Local impact',
-    caption: 'Global scale Local impact',
+    altText: 'Global scale. Local impact',
+    caption: 'Global scale. Local impact',
     key: 1,
   },
   {
