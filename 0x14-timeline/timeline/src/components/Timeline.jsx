@@ -27,7 +27,7 @@ const Timeline = () => {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <Work/> : <School/>}
             >
-              //
+              ///
             </VerticalTimelineElement>
           )
         })}
