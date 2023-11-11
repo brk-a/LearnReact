@@ -1,15 +1,23 @@
 import {View, Text, StyleSheet} from 'react-native'
 import {Feather} from '@expo/vector-icons'
+import { weatherType } from '../utilities/weatherType'
+import moment from "moment"
 
 const ListItem = (props) => {
     const {dt_txt, temp_min, temp_max, condition} = props
-    const {item, temp, date} = styles
+    const {item, temp, date, dateTextWrapper} = styles
   return (
     <View style={item}>
-        <Feather name='sun' size={50} color={'white'}/>
-        <Text style={date}>{dt_txt}</Text>
-        <Text style={temp}>{temp_min}</Text>
-        <Text style={temp}>{temp_max}</Text>
+        <Feather
+            name={weatherType[condition]?.icon}
+            size={50}
+            color={'white'}
+        />
+        <View style={dateTextWrapper}>
+        <Text style={date}>{moment(dt_txt).format('dddd')}</Text>
+        <Text style={date}>{moment(dt_txt).format("HH:mm:ss")}</Text>
+        </View>
+        <Text style={temp}>{`${Math.round(temp_min)}° | ${Math.round(temp_max)}°`}</Text>
     </View>
   )
 }
@@ -23,7 +31,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         borderWidth: 5,
-        backgroundColor: 'orange',
+        backgroundColor: 'indianred',
     },
     temp: {
         color: 'white',
@@ -32,6 +40,9 @@ const styles = StyleSheet.create({
     date: {
         color: 'white',
         fontSize: 15,
+    },
+    dateTextWrapper: {
+        flexDirection: 'column',
     },
 })
 

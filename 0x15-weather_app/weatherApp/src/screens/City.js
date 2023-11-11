@@ -7,7 +7,9 @@ import {
     View
 } from 'react-native'
 import IconText from '../components/IconText'
-const City = () => {
+import moment from 'moment'
+const City = ({weatherData}) => {
+    const {name, country, population, sunrise, sunset} = weatherData
     const {
         container,
         imageLayout,
@@ -26,13 +28,13 @@ const City = () => {
                 source={require("../../assets/city-bg.jpg")}
                 style={imageLayout}
             >
-                <Text style={[cityName, cityText]}>Nairobi</Text>
-                <Text style={[countryName, cityText]}>Kenya</Text>
+                <Text style={[cityName, cityText]}>{name}</Text>
+                <Text style={[countryName, cityText]}>{country}</Text>
                 <View style={[populationWrapper, rowLayout]}>
                     <IconText
                         iconName={'user'}
                         iconColour={'red'}
-                        bodyText={'10,000,000'}
+                        bodyText={`Population ${population}`}
                         bodyTextStyle={populationText}
                     />
                 </View>
@@ -40,13 +42,13 @@ const City = () => {
                     <IconText
                         iconName={'sunrise'}
                         iconColour={'white'}
-                        bodyText={'06:01:23'}
+                        bodyText={moment(sunrise).format('HH:mm:ss')}
                         bodyTextStyle={riseSetText}
                     />
                     <IconText
                         iconName={'sunset'}
                         iconColour={'white'}
-                        bodyText={'18:33:50'}
+                        bodyText={moment(sunset).format('HH:mm:ss')}
                         bodyTextStyle={riseSetText}
                     />
                 </View>
