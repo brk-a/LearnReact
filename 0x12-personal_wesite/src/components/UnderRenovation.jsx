@@ -148,11 +148,11 @@ const MsgCarousel = () => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
             >
-                <img src={item.src} alt={item.alt} className='w-[750px] h-[750px] rounded-full'/>
+                <img src={item.src} alt={item.alt} className='md:w-[750px] w-[250px] md:h-[750px] h-[250px] rounded-full'/>
                 <CarouselCaption
                     captionText={item.msg}
                     // captionHeader={item.alt}
-                    className='text-3xl text-white'
+                    className='md:text-3xl text-xs text-white'
                 />
             </CarouselItem>
         )
@@ -206,22 +206,25 @@ const UnderRenovation = () => {
             <div className='flex flex-col justify-self-center my-8 py-8'>
                 <MsgCarousel />
             </div>
-            <div className='text-2xl text-white my-4'>
+            <div className='md:text-2xl text-white my-4'>
                 I am certain that some translations have not been done properly. <br/>
-                Also, the flags I have used may be archaic, inappropriate, out of context etc.<br/>
+                The flags I have used may be archaic, inappropriate, out of context etc.<br/>
                 I am open to learning the histories of said flags. <br/>
                 Feel free to use <a href='https://www.linkedin.com/in/fnjakai' className='text-yellow-400'>this link</a> to tell me more. <br/>
             </div>
-            <div className='text-2xl text-white my-4'>
+            <div className='md:text-2xl text-white my-4'>
                 Want your ethnicity, culture and language to be represented? <br/>
-                <p className='text-xl'>
+                <p className='md:text-xl'>
                 Send the following to <a href='https://www.linkedin.com/in/fnjakai' className='text-yellow-400'>this link</a>
                 </p>
-                <ul className='flex flex-col items-start justify-center text-lg'>
+                <ul className='flex flex-col items-start justify-center md:text-lg'>
                     <li>1. the flag in jpeg or svg format</li>
                     <li>2. an accurate, contextual translation of the following phrase: <em>"Please bear with me as I renovate this site"</em></li>
                     <li>3. your language's autoglottonym</li>
                 </ul>
+                <p className='mt-12 text-xs'>
+                Strictly no confederate or nazi flags
+                </p>
             </div>
         </div>
     )
