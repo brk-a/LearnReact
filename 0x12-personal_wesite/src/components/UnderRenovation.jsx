@@ -148,12 +148,15 @@ const MsgCarousel = () => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
             >
-                <img src={item.src} alt={item.alt} className='md:w-[750px] w-[250px] md:h-[750px] h-[250px] rounded-full'/>
+                <img src={item.src} alt={item.alt} className='md:w-[650px] w-[250px] md:h-[650px] h-[250px] rounded-full'/>
                 <CarouselCaption
-                    captionText={item.msg}
+                    // captionText={item.msg}
                     // captionHeader={item.alt}
-                    className='md:text-3xl text-xs text-white'
+                    // className='md:text-3xl text-xs text-white bg-black rounded-lg shadow-md'
                 />
+                <div className='flex flex-col items-center justify-center border-1 border-yellow-400 rounded-lg shadow-md my-8 p-4 max-w-2xl'>
+                   <p className='md:text-3xl text-xs text-white'> {item.msg}</p>
+                </div>
             </CarouselItem>
         )
     })
