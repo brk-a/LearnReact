@@ -154,7 +154,7 @@ const MsgCarousel = () => {
                     // captionHeader={item.alt}
                     // className='md:text-3xl text-xs text-white bg-black rounded-lg shadow-md'
                 />
-                <div className='flex flex-col items-center justify-center border-1 border-yellow-400 rounded-lg shadow-md my-8 p-4 max-w-2xl'>
+                <div className='flex flex-col items-center justify-center border-1 border-yellow-400 rounded-lg shadow-md my-8 p-4 lg:max-w-2xl max-w-xs'>
                    <p className='md:text-3xl text-xs text-white'> {item.msg}</p>
                 </div>
             </CarouselItem>
@@ -211,7 +211,7 @@ const UnderRenovation = () => {
             </div>
             <div className='md:text-2xl text-white my-4'>
                 I am certain that some translations have not been done properly. <br/>
-                The flags I have used may be archaic, inappropriate, out of context etc.<br/>
+                Some flags I have used may be archaic, out-of-context or otherwise  inappropriate <br/>
                 I am open to learning the histories of said flags. <br/>
                 Feel free to use <a href='https://www.linkedin.com/in/fnjakai' className='text-yellow-400'>this link</a> to tell me more. <br/>
             </div>
