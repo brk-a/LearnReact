@@ -33,6 +33,26 @@ import github from "./github-mark-white.svg"
 import wordle from "./wordle.svg"
 import spotify from "./spotify.svg"
 import vid from "./vid.webm"
+import gk from "./gikuyu-flag.png"
+import ke from "./kenya.jpeg"
+import et from "./eth.jpeg"
+import uk from "./uk.jpeg"
+import es from "./esp.jpeg"
+import fr from "./fr.jpeg"
+import bh from "./in.jpeg"
+import it from "./it.jpeg"
+import pt from "./pr.jpeg"
+import chewa from "./chewa.jpeg"
+import drc from "./drc.jpeg"
+import ht from "./ht.jpeg"
+import igbo from "./igbo.jpeg"
+import maori from "./maori.jpeg"
+import ru from "./ru.jpeg"
+import rw from "./rw.jpeg"
+import ug from "./ug.jpeg"
+import xhosa from "./xhosa.jpeg"
+import zi from "./zi.jpeg"
+import zulu from "./zulu.jpeg"
 
 export {
   airbnb,
@@ -70,4 +90,24 @@ export {
   wordle,
   spotify,
   vid,
+  gk,
+  ke,
+  et,
+  uk,
+  fr,
+  bh,
+  es,
+  pt,
+  it,
+  zulu,
+  zi,
+  xhosa,
+  ug,
+  rw,
+  maori,
+  igbo,
+  ht,
+  drc,
+  chewa,
+  ru,
 };

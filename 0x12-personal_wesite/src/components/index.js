@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import Hive from "./Hive";
 import Pitch from "./Pitch";
+import UnderRenovation from "./UnderRenovation";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Hero,
   Hive,
   Pitch,
+  UnderRenovation,
 };
